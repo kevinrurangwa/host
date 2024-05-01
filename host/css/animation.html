@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes hyphen{
+            0%{border-color: aqua;}
+            50%{border-color: blue;}
+            70%{border-color: magenta;}
+            100%{border-color:red;}
+            
+        }
+        @keyframes test{
+            0%{
+                transform:rotate(0deg); 
+
+            }
+            100%{transform: rotate(360deg);}
+        }
+
+        @keyframes tra{
+            0%{
+                transform:translate()
+            }
+        }
+
+        p{
+            border: solid greenyellow 17px;
+            margin: 20px 0px;
+            animation-name: hyphen;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        
+        }
+        
+        .animation{
+            margin-bottom: 100px;
+            height: 50px;
+            width: 200px;
+            background-color: blue;
+            animation-name: test;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+        }
+        .animation2{
+            height:100px;
+            width:100px;
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis hic
+        eos culpa, inventore illo vel sunt modi omnis odit sequi laboriosam
+        repellendus aliquid aspernatur sapiente quibusdam asperiores
+        corporis mollitia beatae.
+    </p>
+
+    <div class="animation"></div>
+   
+
+    <div class="animation2"></div>
+
+    
+    
+</body>
+</html>

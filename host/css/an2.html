@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+}
+
+.child {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  background-color: blue; /* Adjust as needed */
+  position: absolute;
+}
+
+.left-to-right {
+  animation: moveLeftToRight 2s ;
+}
+
+.right-to-left {
+  animation: moveRightToLeft 2s;
+}
+
+@keyframes moveLeftToRight {
+  from {
+    left: -100px; /* Start from outside the container */
+  }
+  to {
+    left: calc(50% - 25px); /* Move to the middle of the container */
+  }
+}
+
+@keyframes moveRightToLeft {
+  from {
+    right: -100px; /* Start from outside the container */
+  }
+  to {
+    right: calc(50% - 25px); /* Move to the middle of the container */
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="child left-to-right"></div>
+        <div class="child left-to-right"></div>
+        <div class="child right-to-left"></div>
+        <div class="child right-to-left"></div>
+      </div>
+      
+        
+</body>
+</html>
